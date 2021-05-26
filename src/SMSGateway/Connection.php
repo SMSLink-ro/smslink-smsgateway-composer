@@ -4,11 +4,11 @@ namespace SMSLink\SMSGateway;
 
 class Connection
 {
-    private $connection_id = null;
-    private $password      = null;
+    private $connection_id   = null;
+    private $password        = null;
         
-    private $doHTTPS       = true;    
-    private $requestMethod = 1;
+    private $doHTTPS         = true;    
+    private $requestMethod   = 1;
     
     protected $endpointHTTP  = "http://www.smslink.ro/sms/gateway/communicate/index.php";
     protected $endpointHTTPS = "https://secure.smslink.ro/sms/gateway/communicate/index.php";
