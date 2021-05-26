@@ -2,7 +2,7 @@
 
 namespace SMSLink\SMSGateway;
 
-class API
+class Connection
 {
     private $connection_id = null;
     private $password      = null;
@@ -15,17 +15,30 @@ class API
         
     public $communicationLogs = array();
         
-    public function setConnectionID($connection_id)
+    /**
+     *   Set the SMS Gateway Connection ID and Password
+     *   
+     *    $connection_id and $password can be generated at https://www.smslink.ro/sms/gateway/setup.php after 
+     *       authenticated with your account credentials.
+     *
+     *   @param string    $connection_id     SMSLink - SMS Gateway - Connection ID
+     *   @param string    $password          SMSLink - SMS Gateway - Password     
+     *
+     *   @return bool     true if credentials were set or false otherwise
+     */
+    public function setConnectionCredentials($connection_id, $password)
     {         
-        if (!is_null($connection_id))         
+        if ((!is_null($connection_id)) and (!is_null($password)))         
+        {
             $this->connection_id = $connection_id;                
+            $this->password = $password;
+
+            return true;
+        }
+
+        return false;
     }
     
-    public function setConnectionPassword($password)
-    {
-        if (!is_null($password))
-            $this->password = $password;
-    }
     
     /**
      *   Sets the method in which the parameters are sent to SMS Gateway
