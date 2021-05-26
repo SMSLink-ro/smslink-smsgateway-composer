@@ -30,7 +30,7 @@ $ composer require smslink/smsgateway
  
 ## System Requirements 
 
-* PHP 5 or greater with CURL enabled or file_get_contents with allow_url_fopen to be set to 1 in php.ini  
+* PHP 5 or greater with PHP cURL library or file_get_contents with allow_url_fopen to be set to 1 in php.ini  
 * [Composer](https://getcomposer.org/) - Dependency Manager for PHP
 * [smslink/smsgateway](https://packagist.org/packages/smslink/smsgateway) Package on Packagist - The PHP Package Repository
 
