@@ -9,7 +9,7 @@
         }
     ],
     "homepage": "https://www.smslink.ro",
-    "keywords": ["smslink", "sms", "smslink-ro"],
+    "keywords": ["smslink", "smslink.ro", "sms", "sms api", "php sms", "sms gateway", "sms notifications", "sms integration"],
     "autoload": {
         "psr-4": {
             "SMSLink\\": "src/"
