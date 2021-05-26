@@ -30,11 +30,11 @@ $ composer require smslink/smsgateway
  
 ## System Requirements 
 
-PHP 5 with 
-  CURL enabled or file_get_contents with allow_url_fopen to be set to 1 in php.ini  
-[Composer](https://getcomposer.org/) (Dependency Manager for PHP) 
+* PHP 5 with CURL enabled or file_get_contents with allow_url_fopen to be set to 1 in php.ini  
+* [Composer](https://getcomposer.org/) - Dependency Manager for PHP
+* [smslink/smsgateway](https://packagist.org/packages/smslink/smsgateway) Package on Packagist - The PHP Package Repository
 
-## Usage Example
+## Usage Example using Composer
 
 ``` php
 <?php
@@ -124,6 +124,10 @@ $Connection->displayLogMessages();
 
 ?> 
 ```
+
+## Usage Example without using Composer
+
+[SMSLink.ro](https://www.smslink.ro) [SMS Gateway](https://www.smslink.ro/sms-gateway.html) can also be used without Composer. For using SMSLink SMS Gateway without Composer see [the following example](https://github.com/SMSLink-ro/Integration-example-of-SMS-Gateway-HTTP-using-PHP).
 
 ## Documentation
 
