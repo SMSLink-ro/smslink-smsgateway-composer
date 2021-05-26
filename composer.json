@@ -1,0 +1,18 @@
+{
+    "name": "smslink/smsgateway",
+    "description": "SMSLink is a leading SMS provider that send more than 175 million SMS / year.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SMSLink",
+            "email": "contact@smslink.ro"
+        }
+    ],
+    "homepage": "https://www.smslink.ro",
+    "keywords": ["smslink", "sms", "smslink-ro"],
+    "autoload": {
+        "psr-4": {
+            "SMSLink\\": "src/"
+        }
+    }
+}
