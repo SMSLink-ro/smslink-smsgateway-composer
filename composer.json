@@ -12,7 +12,7 @@
     "keywords": ["smslink", "sms", "smslink-ro"],
     "autoload": {
         "psr-4": {
-            "SMSLink\\SMSGateway\\": "src/"
+            "SMSLink\\": "src/"
         }
     }
 }
